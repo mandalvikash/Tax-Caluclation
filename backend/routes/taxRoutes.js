@@ -3,10 +3,12 @@ const taxController = require("../controllers/taxController");
 
 const router = express.Router();
 
-// POST /api/calculate-tax
+router.get("/", (req, res) => {
+    res.send("Tax Calculation Portal is Live!");
+  });
+
 router.post("/calculate-tax", taxController.calculateTax);
 
-// GET /api/tax-history
 router.get("/tax-history", taxController.getTaxHistory);
 
 module.exports = router;
