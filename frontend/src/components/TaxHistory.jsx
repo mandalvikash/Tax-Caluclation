@@ -4,7 +4,7 @@ function TaxHistory() {
   const [taxHistory, setTaxHistory] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/tax-history")
+    fetch("https://tax-caluclation.vercel.app/api/tax-history")
       .then((response) => response.json())
       .then((data) => setTaxHistory(data))
       .catch((error) => console.error("Error fetching tax history:", error));
