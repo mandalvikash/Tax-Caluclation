@@ -8,7 +8,7 @@ function App() {
 
   const handleCalculateTax = async (incomeDetails) => {
     try {
-      const response = await fetch("http://localhost:5000/api/calculate-tax", {
+      const response = await fetch("https://tax-caluclation.vercel.app/api/calculate-tax", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(incomeDetails),
