@@ -9,7 +9,7 @@ const app = express();
 
 
 app.use(cors({
-  origin:["https://tax-caluclation-72ne.vercel.app"]}));
+  origin:["https://vercel.com/vikash-mandals-projects/tax-caluclation-72ne","https://tax-caluclation-72ne.vercel.app"]}));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
