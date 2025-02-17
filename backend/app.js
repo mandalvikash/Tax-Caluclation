@@ -8,8 +8,7 @@ dotenv.config();
 const app = express();
 
 
-app.use(cors({
-  origin:["https://vercel.com/vikash-mandals-projects/tax-caluclation-72ne","https://tax-caluclation-72ne.vercel.app"]}));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
